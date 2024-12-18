@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Menu - Three Styles</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="style-selector">
+        <button class="style-btn active" data-style="dropdown">
+          Dropdown Style
+        </button>
+        <button class="style-btn" data-style="side">Side Menu Style</button>
+        <button class="style-btn" data-style="modal">Modal Popup Style</button>
+      </div>
+
+      <button id="profileButton">Open Profile Menu</button>
+
+      <!-- Dropdown Menu -->
+      <div id="dropdownMenu">
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/20?text=👤" alt="Profile" />
+          Profile Settings
+        </div>
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/20?text=⚙️" alt="Settings" />
+          Account Settings
+        </div>
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/20?text=🚪" alt="Logout" />
+          Logout
+        </div>
+      </div>
+
+      <!-- Side Menu -->
+      <div id="sideMenu">
+        <button class="close-btn" onclick="closeMenu('side')">&times;</button>
+        <h2>Profile Menu</h2>
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/20?text=👤" alt="Profile" />
+          Profile Settings
+        </div>
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/20?text=⚙️" alt="Settings" />
+          Account Settings
+        </div>
+        <div class="menu-item">
+          <img src="https://via.placeholder.com/20?text=🚪" alt="Logout" />
+          Logout
+        </div>
+      </div>
+
+      <!-- Modal Popup -->
+      <div id="modalMenu">
+        <div class="modal-content">
+          <button class="close-btn" onclick="closeMenu('modal')">
+            &times;
+          </button>
+          <h2>Profile Options</h2>
+          <div class="menu-item">
+            <img src="https://via.placeholder.com/20?text=👤" alt="Profile" />
+            Profile Settings
+          </div>
+          <div class="menu-item">
+            <img src="https://via.placeholder.com/20?text=⚙️" alt="Settings" />
+            Account Settings
+          </div>
+          <div class="menu-item">
+            <img src="https://via.placeholder.com/20?text=🚪" alt="Logout" />
+            Logout
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
